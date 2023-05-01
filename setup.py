@@ -1,9 +1,12 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
 setup(
     name="utils_easy",
-    version="0.0.1",
-    packages=find_packages(),
+    version="0.0.4",
+    packages=[
+         'utils_easy.easy_logger',
+         'utils_easy.stringfyobject'
+       ],
     install_requires=[],
     classifiers=[
         "Development Status :: 3 - Alpha",
@@ -17,3 +20,4 @@ setup(
         "Programming Language :: Python :: 3.10",
     ],
 )
+
