@@ -16,7 +16,7 @@ def setup_logger(module_name):
 
     # create logger
     logger = logging.getLogger(module_name)
-    logger.setLevel(logging.DEBUG if DEBUG else logging.WARNING)
+    logger.setLevel(logging.DEBUG)
     
     if not logger.handlers:
         # # get handler from config
